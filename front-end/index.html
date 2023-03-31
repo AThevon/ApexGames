@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/helpers.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- ICON HEAD -->
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <title>Apex Games</title>
@@ -15,18 +19,19 @@
 <body>
     <header>
         <div class="main-logo">
-            <img src="#" alt="" class="logo">
+            <img src="img/apex-legends-logo-full.svg" alt="" class="logo">
         </div>
         <button id="classBtn">Classes</button>
     </header>
     <main>
         <section class="main-content">
-            <ul class="main-grid-legends">
-                
-            </ul>
-            <ul class="main-grid-classes">
-                
-            </ul>
+            <div class="dynamic-content">
+                <ul class="main-grid main-grid-legends"></ul>
+                <ul class="main-grid main-grid-classes"></ul>
+            </div>
+            <div class="hero">
+                <img src="img/hero-img.png" alt="" class="hero-img">
+            </div>
         </section>
     </main>
     <script src="js/script.js"></script>

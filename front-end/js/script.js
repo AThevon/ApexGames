@@ -31,15 +31,15 @@ function showLegends() {
 
                 const liPassive = document.createElement('li');
                 liPassive.classList.add('passive');
-                liPassive.textContent = legend.passive;
+                liPassive.textContent = `Passive :  ${legend.passive}`;
 
                 const liActive = document.createElement('li');
                 liActive.classList.add('active');
-                liActive.textContent = legend.active;
+                liActive.textContent = `Active : ${legend.active}`;
 
                 const liUltimate = document.createElement('li');
                 liUltimate.classList.add('ultimate');
-                liUltimate.textContent = legend.ultimate;
+                liUltimate.textContent = `Ultimate :  ${legend.ultimate}`;
 
                 ul.appendChild(liPassive);
                 ul.appendChild(liActive);
@@ -68,7 +68,7 @@ function showClasses() {
 
             const classListUl = document.createElement('ul');
             classListUl.classList.add('class-list');
-            
+
             classes.forEach(class_ => {
                 const classListItem = document.createElement('li');
                 classListItem.textContent = class_;
@@ -81,10 +81,10 @@ function showClasses() {
 
 classBtn.addEventListener('click', () => {
     if (legendsList.style.display === 'none') {
-        legendsList.style.display = 'block';
+        legendsList.style.display = 'grid';
         showLegends();
     } else {
-        classList.style.display = 'block';
+        classList.style.display = 'grid';
         showClasses();
     }
 });
